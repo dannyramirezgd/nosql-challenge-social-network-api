@@ -1,5 +1,7 @@
 const { User } = require("../models");
 
+//try to delete user thoughts when deleted as well
+
 const userController = {
   async getAllUsers(req, res) {
     try {

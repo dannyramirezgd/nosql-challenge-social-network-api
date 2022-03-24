@@ -1,5 +1,12 @@
 const { User, Thoughts } = require("../models");
 
+//get all thoughts
+//get thought by id
+//update thought by id
+//delete thought by id
+//post a reaction to thought reactions array
+//delete a reaction to thought reactions array
+
 const thoughtController = {
   async addThought({ params, body }, res) {
     try {
