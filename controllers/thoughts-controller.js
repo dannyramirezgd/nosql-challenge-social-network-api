@@ -1,7 +1,5 @@
 const { User, Thoughts } = require("../models");
 
-//delete a reaction to thought reactions array
-
 const thoughtController = {
   async getAllThoughts(req, res) {
     try {
