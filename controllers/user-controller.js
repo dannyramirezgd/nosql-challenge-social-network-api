@@ -27,13 +27,14 @@ const userController = {
       const dbUserData = await User.findOne({ _id: params.id })
         .populate({
           path: "friends",
-          select: "-__v",
+          select: "friends",
         })
         .populate({
           path: "thoughts",
           select: "-__v",
         })
         .select("-__v");
+        console.log(dbUserData);
       if (!dbUserData) {
         res.status(404).json({ message: "No user found at this id" });
         return;
@@ -72,11 +73,11 @@ const userController = {
     }
   },
 
-  async addFriendsToUser({ params, body }, res) {
+  async addFriendsToUser({ params }, res) {
     try {
       const dbUserData = await User.findOneAndUpdate(
-        { _id: params.id },
-        { $push: { friends: params.id } },
+        { _id: params.userId },
+        { $push: { friends: params.friendId } },
         { new: true, runValidators: true }
       );
       if (!dbUserData) {

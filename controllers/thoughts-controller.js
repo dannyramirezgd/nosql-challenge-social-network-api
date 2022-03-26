@@ -39,7 +39,7 @@ const thoughtController = {
       );
       console.log(dbUserData);
       if (!dbUserData) {
-        res.status(404).json({ message: "No pizza found with this id!" });
+        res.status(404).json({ message: "No thought found with this id!" });
         return;
       }
       return res.json(dbUserData);
