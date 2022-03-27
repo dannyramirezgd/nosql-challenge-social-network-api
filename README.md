@@ -12,7 +12,7 @@ All the back end routes for a social network site. Routes include user crud rout
   - [Built With](#built-with)
   - [Usage](#usage)
   - [Tests](#tests)
-  - [Website](#website)
+  - [Video Walkthrough](#video-walkthrough)
   - [Contributing](#contributing)
   - [Questions](#questions)
   - [License](#license)
@@ -37,8 +37,8 @@ If you are looking to test the program
 
 Testing in insomnia is possible
 
-## Website
-https://github.com/dannyramirezgd/social-network-api
+## Video Walkthrough
+https://drive.google.com/file/d/15ZpR7NITYXDR_OPaMKK7KVNHiLZEtr8N/view
 
 ## Contributing
 If you are looking to contribute you can for example: 
